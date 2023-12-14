@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>오즈코딩스쿨 회원가입</h1>
+        <br>
+    </header>
+    <main>
+        <form method="post" action="oz_coding_school.php">
+            <label for="email" id="email">email </label>
+            <input type="email" id="email" placeholder="이메일을 입력해주세요." name="email">
+            <br>
+            <label for="name" id="name">이름 </label>
+            <input type="text" id="name" placeholder="이름을 입력해주세요." name="name">
+            <br>
+            <label for="pw" id="pw">비밀번호 </label>
+            <input type="password" id="pw" placeholder="비밀번호를 입력해주세요." name="pw">
+            <br>
+            <label for="pw_check" id="pw_check">비밀번호 확인 </label>
+            <input type="password" id="pw_check" placeholder="비밀번호를 다시 입력해주세요." name="pw_check">
+            <br>
+            <div id="phone_number_verification">
+                <p>휴대폰 번호</p>
+                <input type="text" name="phone_first_num">
+                <span>-</span>
+                <input type="text" name="phone_middle_num">
+                <span>-</span>
+                <input type="text" name="phone_last_num">
+                <br>
+                <br>
+                <button value="Verification_code_recieve">인증번호 받기</button>
+                <br>
+                <br>
+                <input type="Verification_code" name="Verification_code" placeholder="인증번호를 입력해주세요">
+                <br>
+                <br>
+                <button value="Verification_code_check">인증확인</button>
+            </div>
+            <br>
+            <br>
+            <p>지역: <select>
+                <option>서울</option>
+                <option>경기</option>
+                <option>충북</option>
+                <option>충남</option>
+                <option>경북</option>
+                <option>경남</option>
+                <option>전북</option>
+                <option>전남</option>
+                <option>강원</option>
+                <option>제주</option>
+                <option>부산</option>
+                <option>대전</option>
+                <option>인천</option>
+                <option>울산</option>
+                <option>대구</option>
+                <option>광주</option>
+                </select>
+            </p>
+            <p>성별 : 
+            <label for="man" id="man">남자</label>
+            <input type="radio" id="man" name="man">
+            <label for="female" id="female">여자</label>
+            <input type="radio" id="female" name="female">
+            </p>
+            <input type="submit" value="가입하기">
+        </form>    
+    </main>
+</body>
+</html>
